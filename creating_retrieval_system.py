@@ -53,11 +53,3 @@ user_query=input("Write Query Here: ")
 response=qa_chain.invoke({'query': user_query})
 print("RESULT: ", response["result"])
 print("SOURCE DOCUMENTS: ", response["source_documents"])
-# import google.generativeai as genai
-# import os
-
-# genai.configure(api_key='AIzaSyC3oxQav_bTNWfjf6TB4YKPyUcvH_Z_d_Q')
-
-# for model in genai.list_models():
-#     if 'generateContent' in model.supported_generation_methods:
-#         print(model.name)
